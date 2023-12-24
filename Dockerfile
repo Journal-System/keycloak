@@ -1,4 +1,4 @@
-FROM quay.io/keycloak/keycloak:20.0.0
+FROM quay.io/keycloak/keycloak:latest
 
 # Set environment variables
 ENV KEYCLOAK_ADMIN=admin
