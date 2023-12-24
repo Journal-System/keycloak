@@ -9,6 +9,9 @@ ENV KC_HOSTNAME="key-cloak.app.cloud.cbh.kth.se"
 ENV KC_PROXY="edge"
 ENV KC_HOSTNAME_ADMIN_URL="https://key-cloak.app.cloud.cbh.kth.se"
 
+# Switch to a non-root user (replace "your-user" with an existing user)
+USER admin
+
 # Create a directory for persistent data
 RUN mkdir -p /opt/jboss/keycloak/standalone/data
 
