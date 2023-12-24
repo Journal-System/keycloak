@@ -9,14 +9,17 @@ ENV KC_HOSTNAME="key-cloak.app.cloud.cbh.kth.se"
 ENV KC_PROXY="edge"
 ENV KC_HOSTNAME_ADMIN_URL="https://key-cloak.app.cloud.cbh.kth.se"
 
-# Create a directory for persistent data
-RUN mkdir -p /mnt/keycloak_data
+# Configure a database vendor
+ENV KC_DB=mysql
+ENV KC_DB_URL=jdbc:mysql://vm.cloud.cbh.kth.se:2776/PatientInfo
+ENV KC_DB_USERNAME=root
+ENV KC_DB_PASSWORD=PASSWORD123
 
 # Expose port 8080
 EXPOSE 8080
 
-# Mount the persistent data directory as a volume
-VOLUME ["/opt/jboss/keycloak/standalone/data"]
+# Specify the entry point script
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
 
 # The default command to run Keycloak
 CMD ["start-dev"]
