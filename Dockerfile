@@ -1,5 +1,5 @@
 # Use the Keycloak base image
-FROM quay.io/keycloak/keycloak:20.0.0
+FROM quay.io/keycloak/keycloak:latest
 
 # Set environment variables
 ENV KEYCLOAK_ADMIN=admin
@@ -22,4 +22,4 @@ EXPOSE 8080
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
 
 # The default command to run Keycloak
-CMD ["start-dev"]
+CMD ["start"]
