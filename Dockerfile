@@ -1,5 +1,5 @@
 # Use the Keycloak base image
-FROM quay.io/keycloak/keycloak:23.0.0
+FROM quay.io/keycloak/keycloak:21.1.0
 
 # Set environment variables
 ENV KEYCLOAK_ADMIN=admin
