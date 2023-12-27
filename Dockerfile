@@ -22,4 +22,4 @@ EXPOSE 8080
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
 
 # The default command to run Keycloak
-CMD ["start"]
+CMD ["start-dev"]
