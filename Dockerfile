@@ -29,6 +29,7 @@ ENV KC_DB_URL=jdbc:mysql://vm.cloud.cbh.kth.se:2776/Keycloak
 ENV KC_DB_USERNAME=root
 ENV KC_DB_PASSWORD=PASSWORD123
 ENV KC_HOSTNAME="key-cloak.app.cloud.cbh.kth.se"
+ENV JAVA_OPTS_APPEND="-Dcom.redhat.fips=false"
 
 # Expose port 8080
 EXPOSE 8080
