@@ -9,6 +9,10 @@ ENV KC_HOSTNAME="key-cloak.app.cloud.cbh.kth.se"
 ENV KC_PROXY="edge"
 ENV KC_HOSTNAME_ADMIN_URL="https://key-cloak.app.cloud.cbh.kth.se"
 
+ENV KC_DB_POOL_INITIAL_SIZE=1
+ENV KC_DB_POOL_MIN_SIZE=1
+ENV KC_DB_POOL_MAX_SIZE=1
+
 # Enable health and metrics support
 ENV KC_HEALTH_ENABLED=true
 ENV KC_METRICS_ENABLED=true
