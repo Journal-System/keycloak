@@ -1,5 +1,5 @@
 # Use the Keycloak base image
-FROM quay.io/keycloak/keycloak:23.0.3
+FROM quay.io/keycloak/keycloak:20.0.0
 
 # Set environment variables
 ENV KEYCLOAK_ADMIN=admin
@@ -9,17 +9,13 @@ ENV KC_HOSTNAME="key-cloak.app.cloud.cbh.kth.se"
 ENV KC_PROXY="edge"
 ENV KC_HOSTNAME_ADMIN_URL="https://key-cloak.app.cloud.cbh.kth.se"
 
-ENV KC_DB_POOL_INITIAL_SIZE=1
-ENV KC_DB_POOL_MIN_SIZE=1
-ENV KC_DB_POOL_MAX_SIZE=1
-
 # Enable health and metrics support
 ENV KC_HEALTH_ENABLED=true
 ENV KC_METRICS_ENABLED=true
 
 # Configure a database vendor
 ENV KC_DB=mysql
-ENV KC_DB_URL=jdbc:mysql://vm.cloud.cbh.kth.se:2776/keycloak
+ENV KC_DB_URL=jdbc:mysql://vm.cloud.cbh.kth.se:2776/Keycloak
 ENV KC_DB_USERNAME=root
 ENV KC_DB_PASSWORD=PASSWORD123
 
