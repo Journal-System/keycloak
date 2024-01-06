@@ -3,7 +3,7 @@ FROM quay.io/keycloak/keycloak:23.0.3
 
 # Set environment variables
 ENV KEYCLOAK_ADMIN=admin
-ENV KEYCLOAK_ADMIN_PASSWORD=gycmav-6mujko-rixzAz
+ENV KEYCLOAK_ADMIN_PASSWORD=admin
 ENV KC_HOSTNAME_STRICT_HTTPS="true"
 ENV KC_HOSTNAME="key-cloak.app.cloud.cbh.kth.se"
 ENV KC_PROXY="edge"
