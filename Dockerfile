@@ -19,7 +19,7 @@ ENV KC_METRICS_ENABLED=true
 
 # Configure a database vendor
 ENV KC_DB=mysql
-ENV KC_DB_URL=jdbc:mysql://vm.cloud.cbh.kth.se:2776/Keycloak
+ENV KC_DB_URL=jdbc:mysql://vm.cloud.cbh.kth.se:2776/keycloak
 ENV KC_DB_USERNAME=root
 ENV KC_DB_PASSWORD=PASSWORD123
 
