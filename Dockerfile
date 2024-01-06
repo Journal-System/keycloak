@@ -11,7 +11,6 @@ ENV KC_HOSTNAME_ADMIN_URL="https://key-cloak.app.cloud.cbh.kth.se"
 
 # Enable health and metrics support
 ENV KC_HEALTH_ENABLED=true
-ENV KC_METRICS_ENABLED=true
 
 # Configure a database vendor
 ENV KC_DB=mysql
